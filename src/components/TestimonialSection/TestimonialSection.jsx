@@ -28,105 +28,69 @@ const TestimonialSection = () => {
                     }}
                     navigation={true} // Add navigation arrows
                     modules={[Autoplay, Pagination, Navigation]} // Add required modules
-                    className=""
+                    className="mySwiper"
                 >
                     {/* Testimonial Slide 1 */}
-                    <SwiperSlide className="">
-                        <div className="p-4 m-4">
-                            <div className="text-center p-10 border-white bg-blue-950 shadow-md rounded-lg">
-                                <p className="text-sm text-white italic p-7">
+                    <SwiperSlide>
+                        <div className="p-4">
+                            <div className="text-center p-6 sm:p-10 border-white bg-blue-950 shadow-md rounded-lg">
+                                <p className="text-sm sm:text-base text-white italic p-4 sm:p-7">
                                     "We needed everything from website design, content creation, and digital marketing for our business. We decided to go with Pixmatech because we realized how comprehensive their services are, along with a pool of professionals who excel in their areas. Once the Pixmatech team took over, I never had to worry about my 'startup' anymore, thanks to them."
                                 </p>
-                                <div className="flex items-center justify-center mt-4">
-                                    <div>
+                                <div className="flex flex-col sm:flex-row items-center justify-center mt-4">
+                                    <div className="text-center sm:text-left">
                                         <h3 className="text-lg text-white font-semibold mt-4">Imran Chowdhury</h3>
                                         <p className="text-sm text-white">Managing Director, Green Valley Foods</p>
                                     </div>
-                                    <div>
-                                        <img className=" w-36 p-8 ml-96" src="/design.png" alt="" />
+                                    <div className="mt-4 sm:mt-0 sm:ml-8">
+                                        <img className="w-24 sm:w-36 p-4 sm:p-8" src="/design.png" alt="Design" />
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </SwiperSlide>
-                    <SwiperSlide className="">
-                        <div className="p-4 m-4">
-                            <div className="text-center p-10 border-white bg-blue-950 shadow-md rounded-lg">
-                                <p className="text-sm text-white italic p-7">
+
+                    {/* Testimonial Slide 2 */}
+                    <SwiperSlide>
+                        <div className="p-4">
+                            <div className="text-center p-6 sm:p-10 border-white bg-blue-950 shadow-md rounded-lg">
+                                <p className="text-sm sm:text-base text-white italic p-4 sm:p-7">
                                     "We needed everything from website design, content creation, and digital marketing for our business. We decided to go with Pixmatech because we realized how comprehensive their services are, along with a pool of professionals who excel in their areas. Once the Pixmatech team took over, I never had to worry about my 'startup' anymore, thanks to them."
                                 </p>
-                                <div className="flex items-center justify-center mt-4">
-                                    <div>
+                                <div className="flex flex-col sm:flex-row items-center justify-center mt-4">
+                                    <div className="text-center sm:text-left">
                                         <h3 className="text-lg text-white font-semibold mt-4">Imran Chowdhury</h3>
                                         <p className="text-sm text-white">Managing Director, Green Valley Foods</p>
                                     </div>
-                                    <div>
-                                        <img className=" w-36 p-8 ml-96" src="/design.png" alt="" />
+                                    <div className="mt-4 sm:mt-0 sm:ml-8">
+                                        <img className="w-24 sm:w-36 p-4 sm:p-8" src="/design.png" alt="Design" />
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </SwiperSlide>
-                    <SwiperSlide className="">
-                        <div className="p-4 m-4">
-                            <div className="text-center p-10 border-white bg-blue-950 shadow-md rounded-lg">
-                                <p className="text-sm text-white italic p-7">
+
+                    {/* Testimonial Slide 3 */}
+                    <SwiperSlide>
+                        <div className="p-4">
+                            <div className="text-center p-6 sm:p-10 border-white bg-blue-950 shadow-md rounded-lg">
+                                <p className="text-sm sm:text-base text-white italic p-4 sm:p-7">
                                     "We needed everything from website design, content creation, and digital marketing for our business. We decided to go with Pixmatech because we realized how comprehensive their services are, along with a pool of professionals who excel in their areas. Once the Pixmatech team took over, I never had to worry about my 'startup' anymore, thanks to them."
                                 </p>
-                                <div className="flex items-center justify-center mt-4">
-                                    <div>
+                                <div className="flex flex-col sm:flex-row items-center justify-center mt-4">
+                                    <div className="text-center sm:text-left">
                                         <h3 className="text-lg text-white font-semibold mt-4">Imran Chowdhury</h3>
                                         <p className="text-sm text-white">Managing Director, Green Valley Foods</p>
                                     </div>
-                                    <div>
-                                        <img className=" w-36 p-8 ml-96" src="/design.png" alt="" />
+                                    <div className="mt-4 sm:mt-0 sm:ml-8">
+                                        <img className="w-24 sm:w-36 p-4 sm:p-8" src="/design.png" alt="Design" />
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </SwiperSlide>
-                    <SwiperSlide className="">
-                        <div className="p-4 m-4">
-                            <div className="text-center p-10 border-white bg-blue-950 shadow-md rounded-lg">
-                                <p className="text-sm text-white italic p-7">
-                                    "We needed everything from website design, content creation, and digital marketing for our business. We decided to go with Pixmatech because we realized how comprehensive their services are, along with a pool of professionals who excel in their areas. Once the Pixmatech team took over, I never had to worry about my 'startup' anymore, thanks to them."
-                                </p>
-                                <div className="flex items-center justify-center mt-4">
-                                    <div>
-                                        <h3 className="text-lg text-white font-semibold mt-4">Imran Chowdhury</h3>
-                                        <p className="text-sm text-white">Managing Director, Green Valley Foods</p>
-                                    </div>
-                                    <div>
-                                        <img className=" w-36 p-8 ml-96" src="/design.png" alt="" />
-                                    </div>
-                                </div>
 
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide className="">
-                        <div className="p-4 m-4">
-                            <div className="text-center p-10 border-white bg-blue-950 shadow-md rounded-lg">
-                                <p className="text-sm text-white italic p-7">
-                                    "We needed everything from website design, content creation, and digital marketing for our business. We decided to go with Pixmatech because we realized how comprehensive their services are, along with a pool of professionals who excel in their areas. Once the Pixmatech team took over, I never had to worry about my 'startup' anymore, thanks to them."
-                                </p>
-                                <div className="flex items-center justify-center mt-4">
-                                    <div>
-                                        <h3 className="text-lg text-white font-semibold mt-4">Imran Chowdhury</h3>
-                                        <p className="text-sm text-white">Managing Director, Green Valley Foods</p>
-                                    </div>
-                                    <div>
-                                        <img className=" w-36 p-8 ml-96" src="/design.png" alt="" />
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                    
+                    {/* Add more slides as needed */}
                 </Swiper>
             </div>
         </div>

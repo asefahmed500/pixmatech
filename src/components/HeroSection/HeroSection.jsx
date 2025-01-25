@@ -11,7 +11,6 @@ const HeroSection = () => {
         "Social Media Marketing",
         "Email & SMS Marketing",
         "Search Engine Marketing",
-            
     ];
 
     const [currentWord, setCurrentWord] = useState(words[0]);
@@ -44,21 +43,21 @@ const HeroSection = () => {
             >
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-neutral-content text-center">
-                    <div className="max-w-md mt-10 ml-[-200px]">
-                        <h1 className="mb-5 text-5xl font-bold text-left">
+                    <div className="max-w-md md:max-w-2xl lg:max-w-4xl mx-auto px-4">
+                        <h1 className="mb-5 text-3xl sm:text-4xl md:text-5xl font-bold text-left">
                             Rethink Your Brands’ Approach to{" "}
                             <span
-                                className={`transition-opacity font-bold text-green-700 text-5xl duration-500 ${
+                                className={`transition-opacity font-bold text-green-700 text-3xl sm:text-4xl md:text-5xl duration-500 ${
                                     fade ? 'opacity-100' : 'opacity-0'
                                 }`}
                             >
                                 {currentWord}
                             </span>
                         </h1>
-                        <button className="btn btn-outline bg-white text-black mt-4 ml-[-300px]">
+                        <button className="btn btn-outline bg-white text-black mt-4 sm:mt-6 md:mt-8 w-full sm:w-auto">
                             Lets Work Together
                         </button>
-                    </div> 
+                    </div>
                 </div>
             </div>
         </div>
