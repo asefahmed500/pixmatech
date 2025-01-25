@@ -25,18 +25,37 @@ const NavBar = () => {
 
     return (
         <div className="bg-gray-200 fixed w-full z-10">
-            <div className="navbar mx-auto max-w-5xl flex justify-between items-center p-4">
-                {/* Logo */}
-                <div className="navbar-start">
-                    <div className="flex items-center">
-                        <img src="/logo.png" alt="Pixmatech Logo" className="h-12 w-12 md:h-18 md:w-18" />
-                        <div className="ml-2 flex flex-col mt-1">
-                            <a className="text-lg md:text-xl font-bold text-gray-800">Pixmatech</a>
-                            <h6 className="text-xs text-gray-600 whitespace-nowrap">INNOVATIVE DIGITAL SOLUTIONS</h6>
+            <div className="navbar mx-auto max-w-5xl flex justify-between items-center p-4  ">
+                <div className='gap-40'>
+                    {/* Logo */}
+                    <div className="navbar-start">
+                        <div className="flex items-center">
+                            <img src="/logo.png" alt="Pixmatech Logo" className="h-12 w-12 md:h-18 md:w-18" />
+                            <div className="ml-2 flex flex-col mt-1">
+                                <a className="text-lg md:text-xl font-bold text-gray-800">Pixmatech</a>
+                                <h6 className="text-xs text-gray-600 whitespace-nowrap">INNOVATIVE DIGITAL SOLUTIONS</h6>
+                            </div>
                         </div>
                     </div>
-                </div>
 
+                    {/* Desktop Menu */}
+                    <div className="hidden lg:flex navbar-center ">
+                        <ul className="menu menu-horizontal px-1 space-x-4">
+                            {navlinks.map((link, index) => (
+                                <li key={index}>
+                                    {link.type === 'button' ? (
+                                        <button className={`btn ${link.className}`} onClick={(e) => handleScroll(e, link.href)}>
+                                            {link.label}
+                                        </button>
+                                    ) : (
+                                        <Link href={link.href}>{link.label}</Link>
+                                    )}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                </div>
                 {/* Mobile Menu */}
                 <div className="lg:hidden navbar-end">
                     <div className="dropdown dropdown-end">
@@ -75,22 +94,7 @@ const NavBar = () => {
                     </div>
                 </div>
 
-                {/* Desktop Menu */}
-                <div className="hidden lg:flex navbar-center">
-                    <ul className="menu menu-horizontal px-1 space-x-4">
-                        {navlinks.map((link, index) => (
-                            <li key={index}>
-                                {link.type === 'button' ? (
-                                    <button className={`btn ${link.className}`} onClick={(e) => handleScroll(e, link.href)}>
-                                        {link.label}
-                                    </button>
-                                ) : (
-                                    <Link href={link.href}>{link.label}</Link>
-                                )}
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+
 
                 {/* Sign Up Button */}
                 <div className="hidden lg:block navbar-end">
